@@ -8,4 +8,6 @@ urlpatterns = [
     # /food/1
     path('<int:item_id>', views.detail, name="detail"),
     path('item/', views.item, name="item"),
+    # add items
+    path('add', views.creat_item, name='creat_item')
 ]
