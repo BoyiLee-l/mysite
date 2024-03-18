@@ -9,5 +9,9 @@ urlpatterns = [
     path('<int:item_id>', views.detail, name="detail"),
     path('item/', views.item, name="item"),
     # add items
-    path('add', views.creat_item, name='creat_item')
+    path('add', views.creat_item, name="creat_item"),
+    # edit
+    path('update/<int:id>', views.update_item, name="update_item"),
+    # delete
+    path('delete/<int:id>', views.delete_item, name="delete_item"),
 ]
